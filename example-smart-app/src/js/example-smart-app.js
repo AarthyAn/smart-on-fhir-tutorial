@@ -26,7 +26,7 @@
 		var alg = smart.patient.api.fetchAll({
 				  "type"= 'AllergyIntolerance',
 				  "query": {
-					  "status": 'active,confirmed,unconfirmed'
+					  "status":'active,confirmed,unconfirmed'
 				    }
 				  });
         $.when(pt, obv, alg).fail(onError);
@@ -93,6 +93,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+	  allergies: {value: ''}
     };
   }
 
@@ -136,6 +137,7 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
+	$('#allergyIntolerance').html(p.allergies);
   };
 
 })(window);
