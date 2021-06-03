@@ -24,17 +24,17 @@
                     }
                   });
 				  var alg = smart.patient.api.fetchAll({
-				  type= 'Allergyintolerance',
-				  query: {
+				  "type"= 'Allergyintolerance',
+				  "query": {
 					  "status": 'active,confirmed,unconfirmed'
 				  }
 				  });
         $.when(pt, obv, alg).fail(onError);
 
         $.when(pt, obv, alg).done(function(patient, obv, alg) {
-			console.log(patient)
-			console.log(obv)
-			console.log(alg)
+			console.log(patient);
+			console.log(obv);
+			console.log(allergies);
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
