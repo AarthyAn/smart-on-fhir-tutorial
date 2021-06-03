@@ -34,7 +34,7 @@
         $.when(pt, obv, alg).done(function(patient, obv, alg) {
 			console.log(patient)
 			console.log(obv)
-			console.log(a;g)
+			console.log(alg)
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
