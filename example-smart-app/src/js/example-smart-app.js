@@ -31,7 +31,7 @@
 				  });
         $.when(pt, obv, alg).fail(onError);
 
-        $.when(pt, obv, alg).done(function(patient, obv, alg) {
+        $.when(pt, obv, alg).done(function(patient, obv, allergies) {
 			console.log(patient);
 			console.log(obv);
 			console.log(allergies);
