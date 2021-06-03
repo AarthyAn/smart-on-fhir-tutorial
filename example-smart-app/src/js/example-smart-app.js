@@ -29,11 +29,12 @@
 					  "status": 'active,confirmed,unconfirmed'
 				  }
 				  });
-        $.when(pt, obv, alg ).fail(onError);
+        $.when(pt, obv, alg).fail(onError);
 
         $.when(pt, obv, alg).done(function(patient, obv, alg) {
 			console.log(patient)
 			console.log(obv)
+			console.log(a;g)
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
 
