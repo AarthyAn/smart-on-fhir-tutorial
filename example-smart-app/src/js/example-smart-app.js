@@ -24,8 +24,8 @@
                     }
                   });
 		var alg = smart.patient.api.fetchAll({
-				  "type": 'AllergyIntolerance',
-				  "query": {
+				  type: 'AllergyIntolerance',
+				  query: {
 					  "status":'active,confirmed,unconfirmed'
 				    }
 				  });
