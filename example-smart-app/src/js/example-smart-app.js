@@ -23,11 +23,11 @@
 					  category: 'vital-signs'
                     }
                   });
-				  var alg = smart.patient.api.fetchAll({
+		var alg = smart.patient.api.fetchAll({
 				  "type"= 'Allergyintolerance',
 				  "query": {
 					  "status": 'active,confirmed,unconfirmed'
-				  }
+				    }
 				  });
         $.when(pt, obv, alg).fail(onError);
 
